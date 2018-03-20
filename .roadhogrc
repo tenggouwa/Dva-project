@@ -1,0 +1,18 @@
+{
+    "entry":"src/index.js",
+    "env":{
+        "development":{
+            "extraBablePlugins":[
+                "dva-hmr",
+                "transform-runtime",
+                ["import",{"libraryName":"anted","style":true}]
+            ]
+        },
+        "production":{
+            "extraBablePlugins":[
+                "transform-runtime",
+                ["import",{"libraryName":"anted","style":true}]
+            ]
+        }
+    }
+}
